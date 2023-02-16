@@ -3,6 +3,7 @@ class ListNode(object):
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
 class Solution(object):
     def mergeTwoLists(self, list1, list2):
         dummy = temp = ListNode()
@@ -19,5 +20,6 @@ class Solution(object):
 
         temp.next = list1 or list2
         return dummy.next
+    
 solution = Solution()
 print(solution.mergeTwoLists([2,4,6,9],[1,3,5,7,8]))
