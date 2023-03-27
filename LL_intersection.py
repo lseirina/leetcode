@@ -4,6 +4,8 @@
 #         self.val = x
 #         self.next = None
 
+
+
 class Solution(object):
     def getIntersectionNode(self, headA, headB):
         tempA = headA
