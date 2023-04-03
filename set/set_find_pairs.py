@@ -3,6 +3,8 @@
 # arr2 = [2, 4, 6, 8, 10]
 # target = 7
 # Output: [(5, 2), (3, 4), (1, 6)]
+
+
 def find_pairs(arr1, arr2, target):
     set1 = arr1
     pairs = []

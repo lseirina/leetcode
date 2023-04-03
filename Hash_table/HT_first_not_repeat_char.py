@@ -1,6 +1,7 @@
 #  if the input string is "hello", the function should return "h" 
 # because "h" is the first non-repeating character in the string.
 
+
 def first_non_repeating_char(string):
     char_count = {}
     

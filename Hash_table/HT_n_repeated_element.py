@@ -1,6 +1,7 @@
 # Input: nums = [2,1,2,5,3,2]
 # Output: 2
 
+
 def repaeted_n_times(nums):
     num_counts = {}
     

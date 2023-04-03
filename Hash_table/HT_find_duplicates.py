@@ -2,6 +2,8 @@
 # Output: [2, 3]
 
 
+
+
 def find_duplicates(nums):
     num_counts = {}
     
