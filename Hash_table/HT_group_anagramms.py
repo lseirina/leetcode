@@ -3,6 +3,7 @@
 # because the first three strings are anagrams of each other, 
 # the next two strings are anagrams of each other, and the last string has no anagrams in the input arra
 
+
 def group_anagrams(words):
     anagram_groups = {}
     for word in words:
