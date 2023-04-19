@@ -1,9 +1,8 @@
 
-# For example, if the input array is ["eat", "tea", "tan", "ate", "nat", "bat"], 
-# the function should return [["eat","tea","ate"],["tan","nat"],["bat"]] 
-# because the first three strings are anagrams of each other, 
+# For example, if the input array is ["eat", "tea", "tan", "ate", "nat", "bat"],
+# the function should return [["eat","tea","ate"],["tan","nat"],["bat"]]
+# because the first three strings are anagrams of each other,
 # the next two strings are anagrams of each other, and the last string has no anagrams in the input arra
-
 
 def group_anagrams(words):
     anagram_groups = {}
@@ -13,14 +12,13 @@ def group_anagrams(words):
             anagram_groups[sorted_word].append(word)
         else:
             anagram_groups[sorted_word] = [word]
-            
+
     return list(anagram_groups.values())
-        
+
 
 print(group_anagrams(["eat", "tea", "tan", "ate", "nat", "bat"]))
-    
-        
-       
-    
-        
-    
+
+
+
+
+
