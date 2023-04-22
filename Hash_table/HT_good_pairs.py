@@ -32,3 +32,6 @@ def find_good_pairs(nums):
     return count
 
 print(find_good_pairs([1,2,3,1,1,3]))
+
+
+
