@@ -4,7 +4,6 @@ Output: 3
 """
 import collections
 
-
 def num_jewels_in_stone(jewels, stones):
     set_jewels = set(jewels)
     count = 0

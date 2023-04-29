@@ -11,7 +11,6 @@ The total sum is 5 + 10 + 15 = 30.
 """
 
 
-
 def calPoints(operations):
     result = []
     for c in operations:

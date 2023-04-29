@@ -1,7 +1,9 @@
 # Input: prices = [8,4,6,2,3]
 # Output: [4,2,4,2,3]
 
-def final_price(A): 
+
+
+def final_price(A):
     stack = []
     for i, a in enumerate(A):
         while stack and A[stack[-1]] >= a:
