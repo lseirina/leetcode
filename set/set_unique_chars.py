@@ -2,14 +2,14 @@
 # ('hello')) # should return False
 
 
-# def unique_chars(s):
-#     result = set()
-#     for char in s:
-#         if char in result:
-#             return False
-#         else:
-#             result.add(char)
-            
-#     return True
+def unique_chars(s):
+    result = set()
+    for char in s:
+        if char in result:
+            return False
+        else:
+            result.add(char)
 
-# print(unique_chars("abcdefg"))
+    return True
+
+print(unique_chars("abcdefg"))

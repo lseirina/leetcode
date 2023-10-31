@@ -6,6 +6,9 @@ Explanation:
 (2, 4, 5) is an arithmetic triplet because both 10 - 7 == 3 and 7 - 4 == 3.
 """
 
+
+
+
 def find_arithmatic_triplets(nums, diff):
     set_nums = set(nums)
     count = 0

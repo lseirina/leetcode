@@ -1,14 +1,39 @@
 # Input: s = ["h","e","l","l","o"]
 # Output: ["o","l","l","e","h"]
 
+# def reverse_string(chars):
+#     return chars[::-1]
 
-def reverse_string(chars):
-    stack = []
-    while chars:
-        stack.append(chars.pop())
-    return stack
+# print(reverse_string(["h","e","l","l","o"]))
 
-print(reverse_string(["h","e","l","l","o"]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def reverse_string(chars):
+#     stack = []
+#     while chars:
+#         stack.append(chars.pop())
+#     return stack
+
+# print(reverse_string(["h","e","l","l","o"]))
 
 
 

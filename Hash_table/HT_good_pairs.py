@@ -2,8 +2,38 @@ import collections
 """
 Input: nums = [1,2,3,1,1,3]
 Output: 4
-Explanation: There are 4 good pairs (0,3), (0,4), (3,4), (2,5) 0-indexed.
+Explanation: There are 4 good pairs (0,3), (0,4), (3,4), (2,5) 0-index.
 """
+def find_good_pairs(nums):
+    count = 0
+    my_dict = {}
+    for i  in range(len(nums)):
+        if nums[i] in my_dict:
+            count += 1
+        my_dict[nums[i]] = i
+
+    return count
+
+print(find_good_pairs([1,2,3,1,1,3]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # def find_good_pairs(nums):
 #     good_pairs = {}
@@ -22,16 +52,16 @@ Explanation: There are 4 good pairs (0,3), (0,4), (3,4), (2,5) 0-indexed.
 
 #     return count
 
-def find_good_pairs(nums):
-    freq = collections.Counter(nums)
-    count = 0
+# def find_good_pairs(nums):
+#     freq = collections.Counter(nums)
+#     count = 0
 
-    for num in freq.values():
-        count += num * (num - 1) // 2  # the double forward slashes (//) are used for integer division in Python.
+#     for num in freq.values():
+#         count += num * (num - 1) // 2  # the double forward slashes (//) are used for integer division in Python.
 
-    return count
+#     return count
 
-print(find_good_pairs([1,2,3,1,1,3]))
+# print(find_good_pairs([1,2,3,1,1,3]))
 
 
 

@@ -8,13 +8,13 @@ class LinkedList:
         new_node = Node(value)
         self.head = new_node
         self.tail = new_node
-        self.length = 1   
+        self.length = 1
     def print_list(self):
         temp = self.head
         while temp:
             print(temp.value)
             temp = temp.next
-            
+
     def append(self, value):
         new_node = Node(value)
         if self.length == 0:
@@ -23,15 +23,15 @@ class LinkedList:
         else:
             self.tail.next = new_node
             self.tail = new_node
-            
-        
-    def reverse(self):
-        before = None
-        while self.head:
-            temp = self.head
-            self.head = self.head.next   
-            temp.next = before
-            before = temp
+
+
+    # def reverse(self):
+    #     before = None
+    #     while self.head:
+    #         temp = self.head
+    #         self.head = self.head.next
+    #         temp.next = before
+    #         before = temp
     def reverse1(self):
         temp = self.head
         self.head = self.tail
@@ -42,13 +42,13 @@ class LinkedList:
             after = temp.next
             temp.next = before
             before = temp
-            temp = after    
-           
+            temp = after
+
 linkedlist = LinkedList(11)
-linkedlist.append(7)  
+linkedlist.append(7)
 linkedlist.append(23)
 linkedlist.append(4)
-linkedlist.reverse1()
+linkedlist.reverse()
 linkedlist.print_list()
 
 

@@ -4,6 +4,7 @@ Output: 4
 Explanation: The longest consecutive sequence in the input array is [4, 3, 2, 1], and its length is 4.
 """
 
+
 def cc(nums):
     set_nums = set(nums)
 
@@ -21,4 +22,4 @@ def cc(nums):
 
     return longest_sequence
 
-print(longest_consecutive_sequence([100, 4, 200, 1, 3, 2]))
+print(cc([100, 4, 200, 1, 3, 2]))

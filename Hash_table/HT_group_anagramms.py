@@ -6,7 +6,6 @@
 
 
 
-
 def group_anagrams(words):
     anagram_groups = {}
     for word in words:
