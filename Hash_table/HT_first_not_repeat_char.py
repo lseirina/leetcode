@@ -1,8 +1,14 @@
 
 #  if the input string is "hello", the function should return "h"
 # because "h" is the first non-repeating character in the string.
+def my_decorator(func):
+    def wrapper(*args, **kwargs):
+        result = func(*args, **kwargs)
+        result = result.title()
+        return result
+    return wrapper
 
-
+@my_decorator
 def first_non_repeating_char(string):
     char_count = {}
 
@@ -15,3 +21,10 @@ def first_non_repeating_char(string):
 
 
 print(first_non_repeating_char("hello"))
+
+def test():
+    assert first_non_repeating_char('hhello') == 'E'
+
+    print('tests passed')
+
+test()

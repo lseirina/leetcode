@@ -23,7 +23,7 @@ def count_pairs(nums, k):
         if num - k in dict_nums:
             count += dict_nums[num - k]
 
-    return count
+    return dict_nums
 
 
 print(count_pairs([1,2,2,1], 1))

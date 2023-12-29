@@ -1,4 +1,5 @@
- def defangIPaddr(self, addre
-        adress = address.replace('.', '[.]')
+#  def defangIPaddr(self, addre
+#         adress = address.replace('.', '[.]')
 
-        return address
+#         return address
+

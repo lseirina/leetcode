@@ -15,3 +15,11 @@ def interpret(command):
     return command
 
 print(interpret("G()(al)"))
+
+def test():
+    assert interpret("G()(al)") == 'Goal'
+    assert interpret('') == ''
+    assert interpret('oal') == 'oal'
+    print('Tests passed')
+
+test()

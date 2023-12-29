@@ -15,9 +15,16 @@ def find_duplicates(nums):
     # for num, count in num_counts.items():
     #     if count > 1:
     #         duplicates.append(num)
-
-
-
     return duplicates
 
-print(find_duplicates([1,1,1,1]))
+print(find_duplicates([1,2,2,1]))
+
+def test():
+    assert find_duplicates([1,2,2,3]) == [2]
+    assert find_duplicates([1,2,3]) == []
+    assert find_duplicates([]) == []
+    assert find_duplicates([1,1,1,1,1]) == [1]
+
+    print('Tests passed')
+
+test()

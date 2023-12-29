@@ -19,3 +19,12 @@ def find_arithmatic_triplets(nums, diff):
     return count
 
 print(find_arithmatic_triplets([0,1,4,6,7,10], 3))
+
+
+# count = 0
+# for num in nums:
+#     if (num - diff) in nums and (num - diff * 2) in nums:
+#         count += 1
+
+# return count
+

@@ -6,41 +6,17 @@
 # of which only "aa" is possible, so the final string is "ca".
 
 
+#@my_decorator
+def removeDublicates(s):
+    stack = []
 
+    for c in s:
+        if stack and stack[-1] == c:
+            stack.pop()
+        else:
+            stack.append(c)
 
+    return "".join(stack)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# def removeDublicates(s):
-#     stack = []
-
-#     for c in s:
-#         if stack and stack[-1] == c:
-#             stack.pop()
-#         else:
-#             stack.append(c)
-
-#     return "".join(stack)
-
-
-
-
-# print(removeDublicates("abbaca"))
-
-
+print(removeDublicates("abbaca"))
 

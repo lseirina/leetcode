@@ -7,6 +7,7 @@
 
 
 def group_anagrams(words):
+
     anagram_groups = {}
     for word in words:
         sorted_word = "".join(sorted(word))

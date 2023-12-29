@@ -10,3 +10,10 @@ def check_pangram(chars):
     return len(set(chars)) == 26
 
 print(check_pangram("thequickbrownfoxjumpsoverthelazydog"))
+
+def test():
+    assert check_pangram('jkjfods438490328590') == False
+    assert check_pangram('') == False
+    print('Tests passed')
+
+test()
