@@ -10,7 +10,7 @@ Other possible solutions are [[2,1,6],[5],[0,4,3]] and [[5],[0,6,2],[4,3,1]].
 def  group_people(groupsizes):
     i = 0
     my_dict = {}
-    result = []
+    res = []
 
     for num in groupsizes:
         if num in my_dict:
@@ -19,10 +19,10 @@ def  group_people(groupsizes):
             my_dict[num] = [i]
         i += 1
         if len(my_dict[num]) == num:
-            result.append(my_dict[num])
+            res.append(my_dict[num])
             my_dict[num] = []
 
-    return result
+    return res
 
 
 
