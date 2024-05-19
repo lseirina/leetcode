@@ -1,3 +1,5 @@
+
+
 def found_first_unique_char(s):
     my_dict = {}
     for c in s:
