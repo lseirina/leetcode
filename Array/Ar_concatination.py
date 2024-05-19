@@ -7,6 +7,15 @@ Explanation: The array ans is formed as follows:
 """
 
 
+
+
+
+
+
+
+
+
+
 def find_concatination(nums):
     return nums + nums
 
