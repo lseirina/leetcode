@@ -8,27 +8,15 @@ ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]]
 """
 
 
-def build_array(nums):
-    ans = [0] * len(nums)
-    for i in range(len(nums)):
-        ans[i] = nums[nums[i]]
+def get_nums(nums):
+    res = []
+    for num in nums:
+        res.append(nums[num])
 
-    return ans
-
-print(build_array([0,2,1,5,3,4]))
+    return res
 
 
-
-
-
-
-
-
-
-
-
-
-
+print(get_nums([0, 2, 1, 5, 3, 4]))
 
 
 
