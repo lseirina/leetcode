@@ -7,9 +7,7 @@ Explanation:
 """
 
 
-
-
-def find_arithmatic_triplets(nums, diff):
+def find_arithmatic_triplets(nums: list[int], diff: int | float) -> int:
     set_nums = set(nums)
     count = 0
     for num in set_nums:
@@ -18,7 +16,8 @@ def find_arithmatic_triplets(nums, diff):
 
     return count
 
-print(find_arithmatic_triplets([0,1,4,6,7,10], 3))
+
+print(find_arithmatic_triplets([0, 1, 4, 6, 7, 10], 3))
 
 
 # count = 0
@@ -27,4 +26,3 @@ print(find_arithmatic_triplets([0,1,4,6,7,10], 3))
 #         count += 1
 
 # return count
-

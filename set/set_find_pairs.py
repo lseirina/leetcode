@@ -10,8 +10,9 @@ def my_decorator(func):
         return result
     return wrapper
 
+
 @my_decorator
-def find_pairs(arr1, arr2, target):
+def find_pairs(arr1: list[int], arr2: list[int], target: int) -> list[tuple]:
     set1 = set(arr1)
     pairs = []
 
@@ -22,5 +23,5 @@ def find_pairs(arr1, arr2, target):
 
     return pairs
 
-print(find_pairs([1, 2, 3, 4, 5], [2, 4, 6, 8, 10], 7))
 
+print(find_pairs([1, 2, 3, 4, 5], [2, 4, 6, 8, 10], 7))
