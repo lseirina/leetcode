@@ -4,6 +4,49 @@ Output: "this is a secret"
 Explanation: The diagram above shows the substitution table.
 It is obtained by taking the first appearance of each letter in "the quick brown fox jumps over the lazy dog".
 """
+
+def decode_message(key, msg):
+    letters = 'abcdefghijklmnopqrstuvwxyz'
+    mapping = {' ': ' '}
+    res = ''
+    count = 0
+    for k in key:
+        if k not in mapping:
+            mapping[k] = letters[count]
+            count += 1
+
+    for char in msg:
+        res += mapping[char]
+
+    return res
+
+print(decode_message("the quick brown fox jumps over the lazy dog", "vkbs bs t suepuv"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 def convert(func):
     def wrapper(*args, **kwargs):
         result = func(*args, **kwargs)
@@ -14,7 +57,7 @@ def convert(func):
 
 @convert
 def decode_message(key, message):
-    mapping = {" ":" "}
+    mapping = {" ": " "}
     letters = 'abcdefghijklmnopqrstuvwxyz'
     res = ''
     count = 0
