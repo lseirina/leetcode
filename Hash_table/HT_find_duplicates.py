@@ -5,46 +5,6 @@
 
 from collections import Counter
 
-
-def find_duplicates(nums):
-    count = Counter(nums)
-    res = []
-    for k, v in count.items():
-        if v == 2:
-            res.append(k)
-    return res
-
-
-print(find_duplicates([4, 2, 7, 2, 8, 3, 1, 3]))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-from collections import Counter
-
 def find_duplicate(nums):
     c_nums = Counter(nums)
     res = []
