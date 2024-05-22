@@ -1,6 +1,47 @@
 
-# Input: nums = [4, 2, 7, 8, 3, 1]
+# Input: nums = [4, 2, 7, 2, 8, 3, 1, 3]
 # Output: [2, 3]
+
+
+from collections import Counter
+
+
+def find_duplicates(nums):
+    count = Counter(nums)
+    res = []
+    for k, v in count.items():
+        if v == 2:
+            res.append(k)
+    return res
+
+
+print(find_duplicates([4, 2, 7, 2, 8, 3, 1, 3]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 from collections import Counter
 

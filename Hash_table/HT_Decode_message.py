@@ -5,32 +5,6 @@ Explanation: The diagram above shows the substitution table.
 It is obtained by taking the first appearance of each letter in "the quick brown fox jumps over the lazy dog".
 """
 
-def decode_message(key, msg):
-    letters = 'abcdefghijklmnopqrstuvwxyz'
-    mapping = {' ': ' '}
-    res = ''
-    count = 0
-    for k in key:
-        if k not in mapping:
-            mapping[k] = letters[count]
-            count += 1
-
-    for char in msg:
-        res += mapping[char]
-
-    return res
-
-print(decode_message("the quick brown fox jumps over the lazy dog", "vkbs bs t suepuv"))
-
-
-
-
-
-
-
-
-
-
 
 
 
