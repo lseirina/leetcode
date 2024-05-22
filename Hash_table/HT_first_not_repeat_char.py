@@ -3,35 +3,6 @@
 # because "h" is the first non-repeating character in the string.
 
 
-def find_first_not_repeating_char(chars):
-    for i in range(len(chars)):
-        if chars[i] not in chars[i+1::]:
-            return chars[i]
-
-print(find_first_not_repeating_char('tarrott'))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
