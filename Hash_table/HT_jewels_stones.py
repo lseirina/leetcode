@@ -2,31 +2,6 @@
 Input: jewels = "aA", stones = "aAAbbbb"
 Output: 3
 """
-def find_jewels(jews, stones):
-    set_jews = set(jews)
-    count = 0
-    for s in stones:
-        if s in set_jews:
-            count += 1
-
-    return count
-
-print(find_jewels('aAb', 'aAAbbb'))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 # def decorator(func):
 #     def wrapper(*args, **kwargs):
