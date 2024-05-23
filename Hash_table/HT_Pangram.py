@@ -4,6 +4,32 @@ Input: sentence = "thequickbrownfoxjumpsoverthelazydog"
 Output: true
 Explanation: sentence contains at least one of every letter of the English alphabet.
 """
+def check_pangrams(sentence):
+    return len(set(sentence)) == 26
+
+print(check_pangrams("thequickbrovelazydog"))
+
+
+
+
+def test_pangram():
+    assert check_pangrams("thequickbrownfoxjumpsoverthelazydog") == True
+    print('Test passed')
+
+test_pangram()
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 def check_pangram(chars):
 
