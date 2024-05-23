@@ -23,42 +23,6 @@ X can be placed before L (50) and C (100) to make 40 and 90.
 C can be placed before D (500) and M (1000) to make 400 and 900.
 """
 
-def roman_to_integer(s):
-    translation = {
-        "I": 1,
-        "V": 5,
-        "X": 10,
-        "L": 50,
-        "C": 100,
-        "D": 500,
-        "M": 1000
-    }
-
-    s.replace('IV', 'IIII').replace('IX', 'VIIII')
-    s.replace('XL', 'XXXX'.replace('XC', 'VXXXX'))
-    s.replace('CD', 'CCCC').replace('CM', 'DCCCC')
-    count = 0
-
-    for c in s:
-        count += translation[c]
-
-    return count
-
-print(roman_to_integer("MCMXCIV"))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
