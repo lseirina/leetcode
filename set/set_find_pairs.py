@@ -2,16 +2,11 @@
 # arr1 = [1, 2, 3, 4, 5]
 # arr2 = [2, 4, 6, 8, 10]
 # target = 7
-# Output: [(5, 2), (3, 4), (1, 6)]
-def my_decorator(func):
-    def wrapper(*args, **kwargs):
-        result = func(*args, **kwargs)
-        print(f'{func.__name__} return {result}')
-        return result
-    return wrapper
+# Output = [(5, 2), (3, 4), (1, 6)]
 
 
-@my_decorator
+
+
 def find_pairs(arr1: list[int], arr2: list[int], target: int) -> list[tuple]:
     set1 = set(arr1)
     pairs = []
