@@ -11,6 +11,35 @@ The total sum is 5 + 10 + 15 = 30.
 """
 
 
+def get_score(ops: list[str]) -> list:
+    res: list = []
+    for c in ops:
+        if c == 'C':
+            res.pop()
+        elif c == 'D':
+            res.append(res[-1] * 2)
+        elif c == '+':
+            res.append(res[-1] + res[-2])
+        else:
+            res.append(int(c))
+
+    return sum(res)
+
+
+print(get_score(["5","2","C","D",'+']))
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -39,5 +68,3 @@ def calPoints(operations):
     return sum(result)
 
 print(calPoints(["5","2","C","D","+"]))
-
-
