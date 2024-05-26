@@ -8,6 +8,20 @@
 # For items 3 and 4 you will not receive any discount at all.
 
 
+def get_finale_price(prices):
+    stack = []
+    for i, num in enumerate(prices):
+        while stack and prices[stack[-1]] >= num:
+            prices[stack.pop()] -= num
+        stack.append(i)
+
+    return prices
+
+
+print(get_finale_price([8,4,6,2,3]))
+
+
+
 
 
 
