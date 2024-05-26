@@ -1,6 +1,36 @@
 # ('abcdefg')) # should return True
 # ('hello')) # should return False
 
+def find_unique_chars(chars):
+    if len(chars) == len(set(chars)):
+        return True
+    return False
+
+
+print(find_unique_chars('abcddefg'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 def unique_chars(s):
     result = set()
