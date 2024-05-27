@@ -1,17 +1,39 @@
 # remove_element([1, 1, 3, 1, 4, 1, 1, 4], 1))
 # output: 3 - 3 numbers(3, 4, 4) are not '1'
 
-def remove_element(nums, val):
+def remove_element(nums, target):
     i = 0
     while i < len(nums):
-        if nums[i] == val:
+        if nums[i] == target:
             nums.pop(i)
         else:
             i += 1
-
     return nums
 
-print(remove_element([1, 1, 3, 1, 4, 1, 1], 1))
+
+print(remove_element([1, 1, 3, 1, 4, 1, 1, 4], 1))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
