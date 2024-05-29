@@ -11,14 +11,13 @@ class Solution(object):
         tempA = headA
         tempB = headB
         while tempA != tempB:
-            if tempA == None:
+            if tempA is None:
                 tempA = headB
             else:
                 tempA = tempA.next
-            
-            if tempB == None:
+
+            if tempB is None:
                 tempB = headA
             else:
                 tempB = tempB.next
         return tempA
-        
