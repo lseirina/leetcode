@@ -3,6 +3,7 @@ class ListNode(object):
         self.val = val
         self.next = next
 
+
 class Solution(object):
     def hasCycle(self, head):
         fast = slow = head
