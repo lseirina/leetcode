@@ -25,24 +25,26 @@ class LinkedList:
             self.tail = new_node
 
 
-    # def reverse(self):
-    #     before = None
-    #     while self.head:
-    #         temp = self.head
-    #         self.head = self.head.next
-    #         temp.next = before
-    #         before = temp
-    def reverse1(self):
-        temp = self.head
-        self.head = self.tail
-        self.tail = temp
+    def reverse(self):
         before = None
-        after = temp.next
-        for _ in range(self.length):
-            after = temp.next
+        while self.head:
+            temp = self.head
+            self.head = self.head.next
             temp.next = before
             before = temp
-            temp = after
+
+            
+    # def reverse1(self):
+    #     temp = self.head
+    #     self.head = self.tail
+    #     self.tail = temp
+    #     before = None
+    #     after = temp.next
+    #     for _ in range(self.length):
+    #         after = temp.next
+    #         temp.next = before
+    #         before = temp
+    #         temp = after
 
 linkedlist = LinkedList(11)
 linkedlist.append(7)
@@ -50,8 +52,3 @@ linkedlist.append(23)
 linkedlist.append(4)
 linkedlist.reverse()
 linkedlist.print_list()
-
-
-
-
-
