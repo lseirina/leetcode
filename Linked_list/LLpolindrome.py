@@ -10,7 +10,7 @@ class Solution(object):
         while temp:
             stack.append(temp.val)
             temp = temp.next
-        
+
         temp = head
         while temp:
             if temp.val != stack.pop():
