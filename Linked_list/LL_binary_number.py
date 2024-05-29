@@ -3,6 +3,26 @@
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 class Solution(object):
     def getDecimalValue(self, head):
         decimal_val = 0
@@ -12,4 +32,3 @@ class Solution(object):
             temp = temp.next
 
         return decimal_val
-            
