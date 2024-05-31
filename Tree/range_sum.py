@@ -22,8 +22,9 @@ class Solution(object):
                 dfs(node.left)
             if node.val < high:
                 dfs(node.right)
+            return self.count
 
         self.count = 0
         dfs(root)
 
-        return self.count
+        

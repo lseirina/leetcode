@@ -6,10 +6,10 @@ class Solution(object):
         :type target: TreeNode
         :rtype: TreeNode
         """
-        if original==None:
-            return False
-        if original==target:
+        if original is None:
+            return None
+        if original  == target:
             return cloned
-        left=self.getTargetCopy(original.left,cloned.left,target)
-        right=self.getTargetCopy(original.right,cloned.right,target)
+        left = self.getTargetCopy(original.left, cloned.left, target)
+        right = self.getTargetCopy(original.right, cloned.right, target)
         return left or right
