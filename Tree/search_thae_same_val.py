@@ -12,4 +12,4 @@ class Solution(object):
         elif root.val > val:
             return self.searchBST(root.left, val)
         else:
-            return self.searchBST(root.right, val) 
+            return self.searchBST(root.right, val)
