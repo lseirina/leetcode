@@ -13,8 +13,4 @@ class Solution(object):
 
         if root.val == root.left.val + root.right.val:
             return True
-        else:
-            return False
-
-
-      
+        return False
