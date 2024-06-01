@@ -26,7 +26,6 @@ def test_reverse_words():
     print('Tests passed')
 
 
-
 test_reverse_words()
 
 
