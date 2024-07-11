@@ -6,50 +6,6 @@ Explanation: There are 4 good pairs (0,3), (0,4), (3,4), (2,5) 0-index.
 """
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # def find_good_pairs(nums):
 #     good_pairs = {}
 #     count = 0
