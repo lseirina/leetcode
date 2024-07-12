@@ -6,29 +6,56 @@ ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]]
     = [nums[0], nums[2], nums[1], nums[5], nums[3], nums[4]]
     = [0,1,2,4,5,3]
 """
-
-
-def get_nums(nums):
-    res = []
-    for num in nums:
-        res.append(nums[num])
-
-    return res
-
-
-print(get_nums([0, 2, 1, 5, 3, 4]))
-
-
-
-
-
-
-
 def build_array(nums):
-    ans = [0] * len(nums)
-    for i in range(len(nums)):
-        ans[i] = nums[nums[i]]
+    return [nums[num] for num in nums]
 
-    return ans
 
 print(build_array([0,2,1,5,3,4]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def get_nums(nums):
+#     res = []
+#     for num in nums:
+#         res.append(nums[num])
+
+#     return res
+
+
+# print(get_nums([0, 2, 1, 5, 3, 4]))
+
+
+
+
+
+
+
+# def build_array(nums):
+#     ans = [0] * len(nums)
+#     for i in range(len(nums)):
+#         ans[i] = nums[nums[i]]
+
+#     return ans
+
+# print(build_array([0,2,1,5,3,4]))
