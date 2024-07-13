@@ -25,10 +25,3 @@ print(find_max_wealth([[1,2,3],[3,7,1]]))
 
 
 
-
-
-# def find_max_wealth(accounts):
-#     """Find the maximim wealth."""
-#     return max([sum(account) for account in accounts])
-
-# print(find_max_wealth([[1,2,3],[3,2,1]]))

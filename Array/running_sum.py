@@ -4,6 +4,18 @@ Output: [1,3,6,10]
 Explanation: Running sum is obtained as follows: [1, 1+2, 1+2+3, 1+2+3+4].
 """
 
+def find_running_sum(nums):
+    res = []
+    while nums != []:
+        res.append(sum(nums))
+        nums.pop()
+
+    return res[::-1]
+
+print(find_running_sum([1,2,3,4]))
+
+
+
 
 def find_running_sum(nums):
     """Find the running sum."""
