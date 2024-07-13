@@ -8,6 +8,10 @@ G -> G
 The final concatenated result is "Goal".
 """
 
+def string_interpreter(s):
+    return s.replace('()', 'o').replace('(al)', 'al')
+
+print(string_interpreter("G()(al)"))
 
 
 
