@@ -9,17 +9,37 @@ Explanation: If you give all extraCandies to:
 - Kid 5, they will have 3 + 3 = 6 candies, which is the greatest among the kids.
 """
 
+def get_greatest_number(nums, extra):
+    return [True if (num + extra) >= max(nums) else False for num in nums]
+print(get_greatest_number([2,3,5,1,3], 3))
 
-def find_greatest_number_of_candies(nums, extra):
-    """Find the kids who has the greatest number of candies."""
-    result = []
 
-    for num in nums:
-        if (num + extra) >= max(nums):
-            result.append(True)
-        else:
-            result.append(False)
 
-    return result
 
-print(find_greatest_number_of_candies([2,3,5,1,3], 3))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def find_greatest_number_of_candies(nums, extra):
+#     """Find the kids who has the greatest number of candies."""
+#     result = []
+
+#     for num in nums:
+#         if (num + extra) >= max(nums):
+#             result.append(True)
+#         else:
+#             result.append(False)
+
+#     return result
+
+# print(find_greatest_number_of_candies([2,3,5,1,3], 3))

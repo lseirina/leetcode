@@ -6,7 +6,8 @@ Explanation: The array ans is formed as follows:
 - ans = [1,2,1,1,2,1]
 """
 def concatinate_array(nums):
-    return nums + nums
+    nums.extend(nums)
+    return nums
 
 print(concatinate_array([1,2,1]))
 
