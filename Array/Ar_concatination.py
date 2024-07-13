@@ -5,18 +5,24 @@ Explanation: The array ans is formed as follows:
 - ans = [nums[0],nums[1],nums[2],nums[0],nums[1],nums[2]]
 - ans = [1,2,1,1,2,1]
 """
-
-
-
-
-
-
-
-
-
-
-
-def find_concatination(nums):
+def concatinate_array(nums):
     return nums + nums
 
-print(find_concatination([1,2,1]))
+print(concatinate_array([1,2,1]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def find_concatination(nums):
+#     return nums + nums
+
+# print(find_concatination([1,2,1]))
