@@ -4,37 +4,49 @@ Output: [2,3,5,4,1,7]
 Explanation: Since x1=2, x2=5, x3=1, y1=3, y2=4, y3=7 then the answer is [2,3,5,4,1,7].
 """
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def shuffle_array(nums, n):
-    result = []
+    res = []
     for i in range(n):
-       result.append(nums[i])
-       result.append(nums[i + n])
+        res.append(nums[i])
+        res.append(nums[i+n])
 
-    return result
+    return res
 
 print(shuffle_array([2,5,1,3,4,7], 3))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def shuffle_array(nums, n):
+#     result = []
+#     for i in range(n):
+#        result.append(nums[i])
+#        result.append(nums[i + n])
+
+#     return result
+
+# print(shuffle_array([2,5,1,3,4,7], 3))
