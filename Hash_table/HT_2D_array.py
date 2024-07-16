@@ -9,40 +9,82 @@ All elements of nums were used, and each row of the 2D array contains distinct i
 It can be shown that we cannot have less than 3 rows in a valid array.
 
 """
-from collections import Counter
-
+from collections import defaultdict
 
 def create_2d_array(nums):
-    count = Counter(nums)
+    my_dict = defaultdict(list)
 
-    ans = []
-    while count:
-        temp = []
-        res = []
-        for k, v in count.items():
-            temp.append(k)
-            v -= 1
-            if v == 0:
-                res.append(k)
-            count[k] = v
-        ans.append(temp)
-        for num in res:
-            del count[num]
+    for i in range(len(nums)):
+        my_dict[nums[i]].append(i)
 
-    return ans
+    res = []
+    while any(my_dict.values()):
+        row = []
+        for num in list(my_dict.keys()):
+            if my_dict[num]:
+                row.append(num)
+                my_dict[num].pop(0)
+        res.append(row)
+
+    return res
 
 
-print (create_2d_array([1, 3, 4, 1, 2, 3, 1]))
+print(create_2d_array([1,3,4,1,2,3,1]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # from collections import Counter
-# def find_matrix(nums):
-#     count = Counter(nums)
-#     result = {}
 
-#     k = max(count.values())
-#     A = list(count.elements()) #The elements() method is a part of the Counter class in Python. It returns an iterator over
-#                                #elements repeating each element as many times as its count.
-#     #return [A[i::k] for i in range(k)] #The slicing syntax A[i::k] means to start from index i and to take every kth
-#     # element from that point onwards.
-#     return A
+
+# def create_2d_array(nums):
+#     count = Counter(nums)
+
+#     ans = []
+#     while count:
+#         temp = []
+#         res = []
+#         for k, v in count.items():
+#             temp.append(k)
+#             v -= 1
+#             if v == 0:
+#                 res.append(k)
+#             count[k] = v
+#         ans.append(temp)
+#         for num in res:
+#             del count[num]
+
+#     return ans
+
+
+# print (create_2d_array([1, 3, 4, 1, 2, 3, 1]))
+
+
+# # from collections import Counter
+# # def find_matrix(nums):
+# #     count = Counter(nums)
+# #     result = {}
+
+# #     k = max(count.values())
+# #     A = list(count.elements()) #The elements() method is a part of the Counter class in Python. It returns an iterator over
+# #                                #elements repeating each element as many times as its count.
+# #     #return [A[i::k] for i in range(k)] #The slicing syntax A[i::k] means to start from index i and to take every kth
+# #     # element from that point onwards.
+# #     return A
