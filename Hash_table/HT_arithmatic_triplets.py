@@ -6,21 +6,6 @@ Explanation:
 (2, 4, 5) is an arithmetic triplet because both 10 - 7 == 3 and 7 - 4 == 3.
 """
 
-def find_arithmatic_triplets(nums, diff):
-    set_nums = set(nums)
-    count = 0
-    for num in set_nums:
-        if (num + diff) in set_nums and (num + 2*diff) in set_nums:
-            count += 1
-
-    return count
-
-
-print(find_arithmatic_triplets([0,1,4,6,7,10], 3))
-
-
-
-
 
 
 
