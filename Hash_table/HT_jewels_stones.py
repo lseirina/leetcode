@@ -3,42 +3,6 @@ Input: jewels = "aA", stones = "aAAbbbb"
 Output: 3
 """
 
-def count_jewels(jewels, stones):
-    count = 0
-    for stone in stones:
-        if stone in set(jewels):
-            count += 1
-
-    return count
-
-print(count_jewels("aA", "aAAbbbb" ))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # #import collections
