@@ -5,9 +5,7 @@
 # the next two strings are anagrams of each other, and the last string has no anagrams in the input arra
 
 
-
-def find_anagrams(words: list[str]) -> list[str]:
-    """Collect all anagrams in groups."""
+def group_anagrams(words):
     my_dict = {}
     for word in words:
         s_word = ''.join(sorted(word))
@@ -18,7 +16,40 @@ def find_anagrams(words: list[str]) -> list[str]:
 
     return list(my_dict.values())
 
-print(find_anagrams(["eat", "tea", "tan", "ate", "nat", "bat"]))
+
+print(group_anagrams(["eat", "tea", "tan", "ate", "nat", "bat"]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def find_anagrams(words: list[str]) -> list[str]:
+#     """Collect all anagrams in groups."""
+#     my_dict = {}
+#     for word in words:
+#         s_word = ''.join(sorted(word))
+#         if s_word in my_dict:
+#             my_dict[s_word].append(word)
+#         else:
+#             my_dict[s_word] = [word]
+
+#     return list(my_dict.values())
+
+# print(find_anagrams(["eat", "tea", "tan", "ate", "nat", "bat"]))
 
 
 
