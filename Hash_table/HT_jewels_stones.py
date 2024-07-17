@@ -3,47 +3,15 @@ Input: jewels = "aA", stones = "aAAbbbb"
 Output: 3
 """
 
-# def decorator(func):
-#     def wrapper(*args, **kwargs):
-#         result = func(*args, **kwargs)
-#         result += 1
-#         return result
-#     return wrapper
+def count_jewels(jewels, stones):
+    count = 0
+    for stone in stones:
+        if stone in set(jewels):
+            count += 1
 
-# @decorator
-# def count_jewels(jewels: str, stones: str):
-#     count = 0
-#     jewels = set(jewels)
+    return count
 
-#     for stone in stones:
-#         if stone in jewels:
-#             count += 1
-
-#     return count
-
-# print(count_jewels('aA', 'AAAAaaaaaAaAaA'))
-
-
-# def test():
-#     assert count_jewels('', 'AAAAaaaaaAaAaA') == 1
-#     print('Test passed')
-# test()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(count_jewels("aA", "aAAbbbb" ))
 
 
 
