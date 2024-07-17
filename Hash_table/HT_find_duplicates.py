@@ -2,28 +2,85 @@
 # Input: nums = [4, 2, 7, 2, 8, 3, 1, 3]
 # Output: [2, 3]
 
-
 from collections import Counter
 
 def find_duplicate(nums):
-    c_nums = Counter(nums)
-    res = []
-    for num, i in dict(c_nums).items():
-        if i != 1:
-            res.append(num)
+    my_dict = Counter(nums)
+    return [num for num, i in my_dict.items() if i != 1]
 
-    return res
+print(find_duplicate([4, 2, 7, 2, 8, 3, 1, 3]))
 
-def test():
-    assert find_duplicate([1, 2, 4, 5]) == []
-    assert find_duplicate([1, 1, 1, 1, 1]) == [1]
-    assert find_duplicate([1, -1]) == []
-    assert find_duplicate([2, 3, 2, 4, 5, 5]) == [2, 5]
 
-    print('Tests passed')
 
-test()
-print(find_duplicate([4, 3, 2, 7, 8, 3, 2, 1]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# from collections import Counter
+
+# def find_duplicate(nums):
+#     c_nums = Counter(nums)
+#     res = []
+#     for num, i in dict(c_nums).items():
+#         if i != 1:
+#             res.append(num)
+
+#     return res
+
+# def test():
+#     assert find_duplicate([1, 2, 4, 5]) == []
+#     assert find_duplicate([1, 1, 1, 1, 1]) == [1]
+#     assert find_duplicate([1, -1]) == []
+#     assert find_duplicate([2, 3, 2, 4, 5, 5]) == [2, 5]
+
+#     print('Tests passed')
+
+# test()
+# print(find_duplicate([4, 3, 2, 7, 8, 3, 2, 1]))
 
 
 
