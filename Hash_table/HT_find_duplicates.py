@@ -15,51 +15,6 @@ print(find_duplicate([4, 2, 7, 2, 8, 3, 1, 3]))
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # from collections import Counter
 
 # def find_duplicate(nums):

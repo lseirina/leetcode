@@ -2,6 +2,39 @@
 #  if the input string is "hello", the function should return "h"
 # because "h" is the first non-repeating character in the string.
 
+from collections import Counter
+
+def find_not_repeat_char(chars):
+    my_dict = Counter(chars)
+    for c in chars:
+        if my_dict[c] == 1:
+            return c
+
+
+
+print(find_not_repeat_char(""))
+
+
+def test_find_not_repeat_char():
+    assert find_not_repeat_char("hello") == 'h'
+    assert find_not_repeat_char('') is None
+    assert find_not_repeat_char('ssddff') is None
+    print('Test passed')
+
+
+test_find_not_repeat_char()
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -14,7 +47,6 @@
 
 from collections import Counter
 def find_not_repeat_char(s: str):
-    my_dict = {}
     count = Counter(s)
 
 
@@ -22,7 +54,7 @@ def find_not_repeat_char(s: str):
         if v == 1:
             return k
 
-print(find_not_repeat_char('hello'))
+# print(find_not_repeat_char('hello'))
 
 
 
