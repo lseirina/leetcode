@@ -10,18 +10,22 @@ Example 3:
 Input: s = "cbzxy"
 Output: -1
 Explanation: There are no characters that appear twice in s.
-"""
-def find_longest_substring(s):
-    first_occurance = {}
+# """
+
+from collections import Counter
+
+def find_largest_substring(s):
+    my_dict = {}
     max_length = -1
-    for i, char in enumerate(s):
-        if char in first_occurance:
-            length = i - first_occurance[char] - 1
+    for i, num in enumerate(s):
+        if num in my_dict:
+            length = i - my_dict[num] - 1
             max_length = max(max_length, length)
         else:
-            first_occurance[char] = i
+            my_dict[num] = i
     return max_length
-print(find_longest_substring("abghjca"))
+
+print(find_largest_substring("abca"))
 
 
 
@@ -49,16 +53,55 @@ print(find_longest_substring("abghjca"))
 
 
 
-def max_length(s):
-    my_dict = {}
-    a = -1
-    for i in range(len(s)):
-        if s[i] in my_dict:
-            a = max(a, (i - my_dict[s[i]] - 1))
-        else:
-            my_dict[s[i]] = i
 
-    return a
+# def find_longest_substring(s):
+#     first_occurance = {}
+#     max_length = -1
+#     for i, char in enumerate(s):
+#         if char in first_occurance:
+#             length = i - first_occurance[char] - 1
+#             max_length = max(max_length, length)
+#         else:
+#             first_occurance[char] = i
+#     return max_length
+# print(find_longest_substring("abghjca"))
 
 
-print(max_length("mgntdygtxrvxjndwksqhxuxtrvm"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def max_length(s):
+#     my_dict = {}
+#     a = -1
+#     for i in range(len(s)):
+#         if s[i] in my_dict:
+#             a = max(a, (i - my_dict[s[i]] - 1))
+#         else:
+#             my_dict[s[i]] = i
+
+#     return a
+
+
+# print(max_length("mgntdygtxrvxjndwksqhxuxtrvm"))
