@@ -32,59 +32,15 @@ def roman_to_interger(s):
         "L": 50,
         "C": 100,
         "D": 500,
-        "M": 1000
+        "M": 1000,
     }
-    count = 0
-
-    s = s.replace('IV', 'IIII').replace('IX', 'VIIII')
-    s = s.replace('XL', 'XXXX').replace('XC', 'LXXXX')
-    s = s.replace('CD', 'CCCC').replace('CM', 'DCCCC')
+    number = 0
+    s = s.replace("IV", "IIII").replace("IX", "VIIII")
+    s = s.replace("XL", "XXXX").replace("XC", "LXXXX")
+    s = s.replace("CD", "CCCC").replace("CM", "DCCCC")
 
     for c in s:
-        count += translation[c]
-
-    return count
-
+        number += translation[c]
+    return number
 
 print(roman_to_interger("MCMXCIV"))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#     }
-#     number = 0
-#     s = s.replace("IV", "IIII").replace("IX", "VIIII")
-#     s = s.replace("XL", "XXXX").replace("XC", "LXXXX")
-#     s = s.replace("CD", "CCCC").replace("CM", "DCCCC")
-
-#     for c in s:
-#         number += translation[c]
-#     return number
-
-# print(roman_to_interger("MCMXCIV"))
