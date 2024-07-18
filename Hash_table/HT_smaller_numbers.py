@@ -16,8 +16,8 @@ def sort_from_biggest_to_smallest(nums: list) -> list:
     res: list = []
     s_nums = sorted(nums)
     for i in range(len(s_nums)):
-        if s_nums[i] not in my_dict: # при формировании словаря, если число уже встречалось, оно не будет перезаписано и 2:1 останется, а не перезапишется на 2:2
-
+        if s_nums[i] not in my_dict:  # при формировании словаря, если число уже встречалось, оно не будет перезаписано и 2:1 останется, а не перезапишется на 2:2
+            my_dict[s_nums[i]] = i
     for num in nums:
         res.append(my_dict[num])
 
