@@ -5,18 +5,6 @@ Output: true
 Explanation: sentence contains at least one of every letter of the English alphabet.
 """
 
-def check_pangram(s):
-    return len(set(s)) == 26
-
-print(check_pangram("thequickbrownfoxjumpsoverthelazydog"))
-
-
-
-
-
-
-
-
 
 
 

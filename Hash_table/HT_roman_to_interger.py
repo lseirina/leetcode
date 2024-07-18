@@ -2,7 +2,7 @@
 
 # Input: s = "LVIII"
 # Output: 58
-# Explanation: L = 50, V= 5, III = 3.
+# Explanation: L = 50, V = 5, III = 3.
 # Example 3:
 
 # Input: s = "MCMXCIV"
@@ -24,12 +24,6 @@ C can be placed before D (500) and M (1000) to make 400 and 900.
 """
 
 
-
-
-
-
-
-
 def roman_to_interger(s):
     translation = {
         "I": 1,
@@ -40,13 +34,57 @@ def roman_to_interger(s):
         "D": 500,
         "M": 1000
     }
-    number = 0
-    s = s.replace("IV", "IIII").replace("IX", "VIIII")
-    s = s.replace("XL", "XXXX").replace("XC", "LXXXX")
-    s = s.replace("CD", "CCCC").replace("CM", "DCCCC")
+    count = 0
+
+    s = s.replace('IV', 'IIII').replace('IX', 'VIIII')
+    s = s.replace('XL', 'XXXX').replace('XC', 'LXXXX')
+    s = s.replace('CD', 'CCCC').replace('CM', 'DCCCC')
 
     for c in s:
-        number += translation[c]
-    return number
+        count += translation[c]
+
+    return count
+
 
 print(roman_to_interger("MCMXCIV"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#     }
+#     number = 0
+#     s = s.replace("IV", "IIII").replace("IX", "VIIII")
+#     s = s.replace("XL", "XXXX").replace("XC", "LXXXX")
+#     s = s.replace("CD", "CCCC").replace("CM", "DCCCC")
+
+#     for c in s:
+#         number += translation[c]
+#     return number
+
+# print(roman_to_interger("MCMXCIV"))
