@@ -14,6 +14,7 @@ Explanation: There are no characters that appear twice in s.
 
 from collections import Counter
 
+
 def find_largest_substring(s):
     my_dict = {}
     max_length = -1
@@ -26,25 +27,6 @@ def find_largest_substring(s):
     return max_length
 
 print(find_largest_substring("abca"))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
