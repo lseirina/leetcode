@@ -28,7 +28,7 @@ def remove_kth_from_end(ll, k):
     for _ in range(k):
         fast = fast.next
 
-    if fast is None:
+    if not fast:
         return ll.head.next
     while fast.next:
         slow = slow.next
