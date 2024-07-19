@@ -24,7 +24,6 @@ class LinkedList:
             self.tail.next = new_node
             self.tail = new_node
 
-
     def reverse(self):
         before = None
         while self.head:
@@ -33,7 +32,8 @@ class LinkedList:
             temp.next = before
             before = temp
 
-            
+
+
     # def reverse1(self):
     #     temp = self.head
     #     self.head = self.tail
