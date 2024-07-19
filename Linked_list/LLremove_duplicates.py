@@ -9,7 +9,7 @@ def remove_dublicates(self, head):
     temp = head
     while temp and temp.next:
         if temp.val == temp.next.val:
-            temp = temp.next.next
+            temp.next = temp.next.next
         else:
             temp = temp.next
 
