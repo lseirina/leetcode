@@ -10,7 +10,10 @@ class Solution(object):
         :type val: int
         :rtype: ListNode
         """
-        dummy_head = ListNode()
+       
+
+
+        dummy_head = ListNode() # создаем новый узел, на случай если val будет равно head и придеься удалить head
         dummy_head.next = head
         temp = dummy_head
 
