@@ -11,6 +11,47 @@ class Solution(object):
         tempA = headA
         tempB = headB
         while tempA != tempB:
+            if not tempA:
+                tempA = headB
+            else:
+                tempA = tempA.next
+
+            if not tempB:
+                tempB = headA
+            else:
+                tempB = tempB.next 
+                
+        return tempA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        tempA = headA
+        tempB = headB
+        while tempA != tempB:
             if tempA is None:
                 tempA = headB
             else:
