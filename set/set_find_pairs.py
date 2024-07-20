@@ -5,18 +5,54 @@
 # Output = [(5, 2), (3, 4), (1, 6)]
 
 
-
-
-def find_pairs(arr1: list[int], arr2: list[int], target: int) -> list[tuple]:
-    set1 = set(arr1)
-    pairs = []
-
+def find_pairs(arr1, arr2, target):
+    res = []
     for num in arr2:
         complement = target - num
-        if complement in set1:
-            pairs.append((complement, num))
+        if complement in arr1:
+            res.append((complement, num))
 
-    return pairs
+    return res
+
+
 
 
 print(find_pairs([1, 2, 3, 4, 5], [2, 4, 6, 8, 10], 7))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def find_pairs(arr1: list[int], arr2: list[int], target: int) -> list[tuple]:
+#     set1 = set(arr1)
+#     pairs = []
+
+#     for num in arr2:
+#         complement = target - num
+#         if complement in set1:
+#             pairs.append((complement, num))
+
+#     return pairs
+
+
+# print(find_pairs([1, 2, 3, 4, 5], [2, 4, 6, 8, 10], 7))
