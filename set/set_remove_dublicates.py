@@ -1,43 +1,12 @@
 nums = [1, 2, 3, 4, 1, 2, 5, 6, 7, 3, 4, 8, 9, 5]
 
+
+
 def remove_duplicates(nums):
     return list(set(nums))
 
 
-print(remove_duplicates([1, 2, 3, 4, 1, 2, 5, 6, 7, 3, 4, 8, 9, 5]))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# def remove_duplicates(nums):
-#     return list(set(nums))
-
-
-# print(remove_duplicates(nums))
+print(remove_duplicates(nums))
 
 
 
