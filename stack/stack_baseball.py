@@ -10,24 +10,21 @@ Explanation:
 The total sum is 5 + 10 + 15 = 30.
 """
 
-
-def get_score(ops: list[str]) -> list:
-    res: list = []
-    for c in ops:
+def count_scores(chars):
+    stack = []
+    for c in chars:
         if c == 'C':
-            res.pop()
+            stack.pop()
         elif c == 'D':
-            res.append(res[-1] * 2)
+            stack.append(stack[-1]*2)
         elif c == '+':
-            res.append(res[-1] + res[-2])
+            stack.append(stack[-1]+stack[-2])
         else:
-            res.append(int(c))
+            stack.append(int(c))
 
-    return sum(res)
+    return sum(stack)
 
-
-print(get_score(["5","2","C","D",'+']))
-
+print(count_scores(["5","2","C","D","+"]))
 
 
 
@@ -52,19 +49,49 @@ print(get_score(["5","2","C","D",'+']))
 
 
 
-def calPoints(operations):
-    result = []
-    for c in operations:
-        if c == "C":
-            result.pop()
-        elif c == "D":
-            result.append(2 * result[-1])
-        elif c == "+":
-            result.append(result[-1] + result[-2])
-        else:
-            result.append(int(c))
 
 
-    return sum(result)
 
-print(calPoints(["5","2","C","D","+"]))
+
+
+
+
+
+
+
+# def get_score(ops: list[str]) -> list:
+#     res: list = []
+#     for c in ops:
+#         if c == 'C':
+#             res.pop()
+#         elif c == 'D':
+#             res.append(res[-1] * 2)
+#         elif c == '+':
+#             res.append(res[-1] + res[-2])
+#         else:
+#             res.append(int(c))
+
+#     return sum(res)
+
+
+# print(get_score(["5","2","C","D",'+']))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
