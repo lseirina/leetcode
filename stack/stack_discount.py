@@ -8,12 +8,60 @@
 # For items 3 and 4 you will not receive any discount at all.
 
 
-def final_price(A):
+def count_discount(nums):
     stack = []
-    for i, a in enumerate(A):
-        while stack and A[stack[-1]] >= a:
-            A[stack.pop()] -= a
+    for i, num in enumerate(nums):
+        while stack and nums[stack[-1]] >= num:
+            nums[stack.pop()] -= num
         stack.append(i)
-    return A
 
-print(final_price([8,4,6,2,3]))
+    return nums
+
+
+print(count_discount([8,4,6,2,3]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def final_price(A):
+#     stack = []
+#     for i, a in enumerate(A):
+#         while stack and A[stack[-1]] >= a:
+#             A[stack.pop()] -= a
+#         stack.append(i)
+#     return A
+
+# print(final_price([8,4,6,2,3]))
