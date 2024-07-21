@@ -5,7 +5,16 @@
 # Explanation: The next greater element for each value of nums1 is as follows:
 # -  2 is underlined in nums2 = [1,2,3,4]. The next greater element is 3.
 # - 4 is underlined in nums2 = [1,2,3,4]. There is no next greater element, so the answer is -1.
+def upper(n):
+    def my_decorator(func):
+        def wrapper(*args, **kwargs):
+            result = func(*args, **kwargs)
+            return [num * n for num in result]
+        return wrapper
+    return my_decorator
 
+
+@upper(3)
 def find_next_greater(nums1, nums2):
     greater_pairs = {}
     stack = []
@@ -33,50 +42,6 @@ print(find_next_greater([2,4], [1,2,3,4]))
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# def find_next_greater(nums1, nums2):
-#     greater_pairs = {}
-#     stack = []
-#     res = []
-
-#     for num in nums2:
-#         while stack and stack[-1] < num:
-#             greater_pairs[stack[-1]] = num
-#             stack.pop()
-#         stack.append(num)
-
-#     for element in stack:
-#         greater_pairs[element] = -1
-
-#     for num in nums1:
-#         res.append(greater_pairs[num])
-
-#     return res
-
-
-# print(find_next_greater([2,4], [1,2,3,4]))
 
 
 
