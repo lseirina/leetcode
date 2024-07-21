@@ -2,11 +2,37 @@
 # Output: ["o","l","l","e","h"]
 
 
-def reverse_string(s):
+def reverse_string(s: list) -> list:
     return s[::-1]
 
 
 print(reverse_string(["h","e","l","l","o"]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def reverse_string(s):
+#     return s[::-1]
+
+
+# print(reverse_string(["h","e","l","l","o"]))
 
 
 
