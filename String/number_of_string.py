@@ -10,39 +10,9 @@ Explanation:
 """
 
 
-def count_number_str(patterns, word):
+def count_number_of_strings(patterns, word):
     count = 0
     for pattern in patterns:
         if pattern in word:
             count += 1
     return count
-
-
-print(count_number_str(["a","abc","bc","d"], "abc"))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# def count_number_of_strings(patterns, word)
-#     count = 0
-#     for pattern in patterns:
-#         if pattern in word:
-#             count += 1
-#     return count

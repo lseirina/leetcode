@@ -1,5 +1,7 @@
-#  def defangIPaddr(self, addre
-#         adress = address.replace('.', '[.]')
+def defangIPaddr(address):
+    address = address.replace('.', '[.]')
 
-#         return address
+    return address
 
+
+print(defangIPaddr('fghj.fghj'))
