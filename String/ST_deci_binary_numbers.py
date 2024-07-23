@@ -3,11 +3,33 @@ Input: n = "32"
 Output: 3
 Explanation: 10 + 11 + 11 = 32 (82734")
 """
-def split_in_binary_nums(nums):
-    return max(nums)
 
 
-print(split_in_binary_nums('82734'))
+def count_sum_binary_numbers(n):
+    return int(max(n))
+
+
+print(count_sum_binary_numbers('32'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
