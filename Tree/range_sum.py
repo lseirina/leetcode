@@ -15,16 +15,16 @@ class Solution(object):
 
         def dfs(node):
             if node is None:
-                return None
+                return
             if low <= node.val <= high:
                 self.count += node.val
             if node.val > low:
                 dfs(node.left)
             if node.val < high:
                 dfs(node.right)
-            return self.count
+
+
 
         self.count = 0
         dfs(root)
-
-        
+        return self.count
