@@ -10,7 +10,6 @@ class Solution(object):
         :type root: Optional[TreeNode]
         :rtype: bool
         """
-
         if root.val == root.left.val + root.right.val:
             return True
         return False
