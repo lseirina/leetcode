@@ -8,7 +8,7 @@ class Solution(object):
         """
         if original is None:
             return None
-        if original  == target:
+        if original == target:
             return cloned
         left = self.getTargetCopy(original.left, cloned.left, target)
         right = self.getTargetCopy(original.right, cloned.right, target)

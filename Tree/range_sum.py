@@ -23,8 +23,6 @@ class Solution(object):
             if node.val < high:
                 dfs(node.right)
 
-
-
         self.count = 0
         dfs(root)
         return self.count

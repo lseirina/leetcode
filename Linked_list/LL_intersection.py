@@ -5,8 +5,6 @@
 #         self.next = None
 
 
-
-
         tempA = headA
         tempB = headB
         while tempA != tempB:
