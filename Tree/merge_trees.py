@@ -11,6 +11,7 @@ class Solution(object):
         :type root2: TreeNode
         :rtype: TreeNode
         """
+        
         if root1 and root2:
             root = TreeNode(root1.val + root2.val)
             root.left = self.mergeTrees(root1.left, root2.left)
