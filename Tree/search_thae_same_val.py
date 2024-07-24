@@ -5,6 +5,7 @@ class Solution(object):
         :type val: int
         :rtype: TreeNode
         """
+        
         if not root:
             return
         if root.val == val:
