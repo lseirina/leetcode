@@ -5,7 +5,9 @@ it reverses the string that you have written.
 Typing other characters works as expected.
 Input: s = "string"
 Output: "rtsng"
-"""
+# """
+
+
 def final_string(s):
     result = []
 
