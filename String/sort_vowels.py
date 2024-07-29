@@ -9,21 +9,22 @@ The vowels are 'a', 'e', 'i', 'o', and 'u'
 
 def permute_string(s):
     def is_vowels(c):
-        return c in ['a', 'e', 'i', 'o', 'u']
+        return c.lower() in 'aeiou'
 
-    vowels = [c for c in s if is_vowels]
+    vowels = [c for c in s if is_vowels(c)]
+    vowels.sort()
     vowel_index = 0
     res = []
-    vowels.sort()
 
-    for c in s:
-        if c in vowels:
+    for char in s:
+        if is_vowels(char):
             res.append(vowels[vowel_index])
             vowel_index += 1
-        else:
-            res.append(c)
 
-    return ''.join(res)
+        else:
+            res.append(char)
+
+    return vowels
 
 
 print(permute_string("lEetcOde"))
