@@ -10,17 +10,50 @@ from collections import Counter
 
 
 def part_string(s):
-    res = ''
-    ans = []
+    char_set = set()
+    count = 0
+
     for char in s:
-        if char in res:
-            ans.append(res)
-            res = ''
+        if char in char_set:
+            count += 1
+            char_set.clear
 
-        res += char
-    ans.append(res)
+        char_set.add(char)
 
-    return len(ans)
+
+
+    return count
+
+print(part_string("abacaba"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    # res = ''
+    # ans = []
+    # for char in s:
+    #     if char in res:
+    #         ans.append(res)
+    #         res = ''
+
+    #     res += char
+    # ans.append(res)
+
+    # return len(ans)
 
 
 print(part_string("abacaba"))
