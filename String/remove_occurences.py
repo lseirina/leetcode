@@ -8,13 +8,16 @@ Explanation: The following operations are done:
 Now s has no occurrences of "abc".
 """
 def remove_occurences(s, part):
-    res = []
-    l_part = len(part)
-    for char in s:
-        res.append(char)
-        if part in ''.join(res):
-            res = res[:-l_part]
+    while part in s:
+        s = s.replace(part, '', 1)  # Remove only the leftmost occurrence
+    return s
+    # res = []
+    # l_part = len(part)
+    # for char in s:
+    #     res.append(char)
+    #     if part in ''.join(res):
+    #         res = res[:-l_part]
 
-    return ''.join(res)
+    # return ''.join(res)
 
 print(remove_occurences("axxxxyyyyb", 'xy'))
