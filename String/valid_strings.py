@@ -7,7 +7,6 @@ Explanation:
 
 The valid strings of length 3 are: "010", "011", "101", "110", and "111".
 """
-import random
 
 
 def valid_string(n):
