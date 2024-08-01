@@ -10,6 +10,7 @@ nums       index     target
 4            1        [0,4,1,3,2]
 """
 
+
 def create_target_array(nums, index):
     target = []
     for i in range(len(nums)):
