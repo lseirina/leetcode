@@ -8,6 +8,7 @@ Explanation:
 The 2 good pairs are (3, 0) and (3, 1).
 """
 
+
 def count_good_pairs(nums1, nums2, k):
     count = 0
     for num1 in nums1:
