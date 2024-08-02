@@ -19,4 +19,5 @@ def find_final_value(str):
 
     return count
 
-print(find_final_value(["--X","X++","X++"]))
+
+print(find_final_value(["--X", "X++", "X++"]))
