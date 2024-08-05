@@ -14,9 +14,10 @@ def find_k_distinct_string(arr, k):
     count = Counter(arr)
     res = []
 
-    for key, v in count.items():
-        if v == 1:
-            res.append(key)
+    for char in arr:
+        if count[char] == 1:
+            res.append(char)
+
     if len(res) < k:
         return ''
     return res[k-1]
