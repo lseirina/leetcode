@@ -24,7 +24,7 @@ def permute_string(s):
         else:
             res.append(char)
 
-    return vowels
+    return res
 
 
 print(permute_string("lEetcOde"))
