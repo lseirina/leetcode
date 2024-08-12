@@ -21,4 +21,5 @@ def find_increasing_triplets(nums):
 
     return False
 
+
 print(find_increasing_triplets([20,100,10,12,5,13]))
