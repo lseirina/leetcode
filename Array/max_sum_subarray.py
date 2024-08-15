@@ -9,7 +9,7 @@ Explanation: Subarray [5, 1, 3] has the maximum sum of 9.
 
 def max_sum_subarray(arr, k):
     # Initialize variables
-    max_sum = 0
+    #max_sum = 0
     window_sum = 0
     start = 0
 
