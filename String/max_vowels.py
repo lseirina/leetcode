@@ -4,6 +4,7 @@ Output: 2
 Explanation: "lee", "eet" and "ode" contain 2 vowels.
 "abciiidef", 3
 """
+
 def find_max_vowels(s, k):
     vowels = set('aeuio')
     current_vowel_count = 0
