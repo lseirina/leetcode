@@ -8,12 +8,17 @@ Explanation: There is 1 equal row and column pair:
 def find_equal_pairs(grid):
     count = 0
     columns = list(zip(*grid))
+    # for row in grid:
+    #     for col in columns:
+    #         if tuple(row) == col:
+    #             count += 1
+
     for row in grid:
-        for col in columns:
-            if tuple(row) == col:
-                count += 1
+        if tuple(row) in columns:
+            count += 1
 
     return count
+
 
 
 
