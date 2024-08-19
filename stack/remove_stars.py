@@ -7,6 +7,7 @@ Explanation: Performing the removals from left to right:
 - The closest character to the 3rd star is 'd' in "lecod*e". s becomes "lecoe".
 There are no more stars, so we return "lecoe".
 """
+
 def remove_stars(s):
     res = []
     for c in s:
