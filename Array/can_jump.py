@@ -5,6 +5,14 @@ Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index.
 [3,2,1,1,0,1]
 [2,0,0]
 """
+def my_decorator(func):
+    def wrapper(*args, **kwargs):
+        result = func(*args, **kwargs)
+        print('Hello')
+        return result
+    return wrapper
+
+@my_decorator
 def can_jump(nums):
     last_position = len(nums) - 1
     for i in range(len(nums) - 2, -1, -1):
