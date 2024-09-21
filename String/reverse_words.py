@@ -11,7 +11,6 @@ def reverse_words(sentence):
     return ' '.join(res)
 
 
-
 print(reverse_words("Let's take LeetCode contest"))
 
 
@@ -47,4 +46,3 @@ print(reverse_words("Let's take LeetCode contest"))
 #     return ' '.join(sentence)
 
 # print(reverse_words("Let's take LeetCode contest"))
-
