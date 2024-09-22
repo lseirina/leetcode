@@ -6,17 +6,13 @@ from collections import Counter
 
 
 def canConstruct(ransomNote, magazine):
-    count_r = Counter(ransomNote)
-    count_m = Counter(magazine)
-    i = 0
-    n = len(set(ransomNote))
-    for k, v in count_r.items():
-        if count_m[k] >= v:
-            i += 1
-
-    if i == n:
-        return True
-    return False
+    count = Counter(magazine)
+    for c in ransomNote:
+        if c in count and count[c] > 0:
+            count[c] -= 1
+        else:
+            return False
+    return True
 
 
 print(canConstruct('aab', 'baafdb'))
