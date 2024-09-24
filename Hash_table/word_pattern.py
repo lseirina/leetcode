@@ -6,6 +6,8 @@ Output: true
 
 def find_word_pattern(pattern, s):
     new_s = s.split()
+    if len(pattern) != len(new_s):
+        return False
     my_dict1 = {}
     my_dict2 = {}
     for c1, c2 in zip(pattern, new_s):
