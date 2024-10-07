@@ -8,17 +8,11 @@ Output: false
 
 def check_nearby_duplicates(nums, k):
     count_duplicates = {}
-    for i in range(len(nums)):
-        if nums[i] in count_duplicates:
-            count_duplicates[nums[i]].append(i)
+    for i, num in enumerate(nums):
+        if num in count_duplicates and abs(count_duplicates[num] - i) <= k:
+            return True
         else:
-            count_duplicates[nums[i]] = [i]
-
-    for val in count_duplicates.values():
-        if len(val) > 1:
-            for i in range(len(val)-1):
-                if abs(val[i] - val[i+1]) <= k:
-                    return True
+            count_duplicates[num] = i
     return False
 
 
