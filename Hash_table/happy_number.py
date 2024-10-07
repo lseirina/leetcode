@@ -24,4 +24,4 @@ def find_happy_number(n):
     return n == 1
 
 
-print(find_happy_number(19))
+print(find_happy_number(2))
