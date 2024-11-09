@@ -12,9 +12,8 @@ def find_subsequence(s, t):
         if t[i] == s[subsequence_index]:
             subsequence_index += 1
 
-    if len(s) == subsequence_index:
-        return True
-    return False
+    return len(s) == subsequence_index
+
 
 
 print(find_subsequence('ab', 'baab'))

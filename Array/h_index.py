@@ -8,13 +8,23 @@ and the remaining two with no more than 3 citations each, their h-index is 3.
 """
 
 
-def find_h_index(citations):
-    h = 0
-    citations.sort(reverse=True)
-    for i in range(len(citations)):
-        if citations[i] >= i + 1:
-            h += 1
-    return h
 
 
-print(find_h_index([3,0,6,1,5]))
+
+
+
+
+
+
+
+
+# def find_h_index(citations):
+#     h = 0
+#     citations.sort(reverse=True)
+#     for i in range(len(citations)):
+#         if citations[i] >= i + 1:
+#             h += 1
+#     return h
+
+
+# print(find_h_index([3,0,6,1,5]))
