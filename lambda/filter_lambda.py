@@ -1,10 +1,8 @@
-nums = [i for i in range(1, 6)]
+a = [i for i in range(5)]
 
-even_numbers = list(filter(lambda x: x % 2 == 0, nums))
-
-print(even_numbers)
-
-
+b = filter(lambda x: x % 2 == 0, a)
+for c in b:
+    print(c)
 
 
 
@@ -23,11 +21,8 @@ print(even_numbers)
 
 
 
+# nums = [i for i in range(1, 6)]
 
+# even_numbers = list(filter(lambda x: x % 2 == 0, nums))
 
-
-# numbers = [1,2,3,4,5,6,7,8,9]
-
-# even_nums = list(map(lambda x: x % 2 == 0, numbers))
-
-# print(even_nums)
+# print(even_numbers)
