@@ -1,4 +1,4 @@
-SELECT email AS Email
-FROM Person
+SELECT email
+FROM person 
 GROUP BY email
 HAVING COUNT(id) = 2
