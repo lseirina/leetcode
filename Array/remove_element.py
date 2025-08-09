@@ -12,5 +12,12 @@ def remove_element(nums, val):
 
     return len(nums)
 
+    # i = 0 тоже верно
+    # for j  in range(len(nums)):
+    #     if nums[j] != val:
+    #         nums[i] = nums[j]
+    #         i += 1
+    # return i
+        
 
 print(remove_element([0,1,2,2,3,0,4,2], 2))
