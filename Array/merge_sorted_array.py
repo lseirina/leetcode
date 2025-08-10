@@ -7,7 +7,7 @@ The result of the merge is [1,2,2,3,5,6] with the underlined elements coming fro
 
 
 def merge_sorted_array(nums1, m, nums2, n):
-    # return sorted(nums1[:m] + nums2[:n])
+   
     for j in range(n):
         nums1[m+j] = nums2[j]
     nums1.sort()

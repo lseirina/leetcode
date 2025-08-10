@@ -8,6 +8,7 @@ def get_max_profit(prices: list) -> int:
     max_profit = 0
     min_price = float('inf') # float('inf') is a way to represent positive infinity.
     # It's a special floating-point value that is greater than any other number.
+    # бесконечно большое значение(без этого оно не будет определено), мы начинаем с него , чтобы любое число было меньше его
     for price in prices:
         if price < min_price:
             min_price = price
