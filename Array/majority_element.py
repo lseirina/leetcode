@@ -8,7 +8,7 @@ def find_majority_element(nums):
     count = Counter(nums)
     for k, v in count.items():
         if v == max(count.values()):
-            return count
+            return v
 
 
 print(find_majority_element([2, 2, 1, 1, 1, 2, 2]))
