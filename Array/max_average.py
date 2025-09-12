@@ -5,18 +5,15 @@ Explanation: Maximum average is (12 - 5 - 6 + 50) / 4 = 51 / 4 = 12.75
 """
 
 def find_max_average(nums, k):
-    window_sum = sum(nums[:k])
-    # for i in range(k):
-    #     window_sum += nums[i]
-
-    max_avg = window_sum / k
-
+    sum_window = sum(nums[:k])
+    max_avg = sum_window/k
     for i in range(k, len(nums)):
-        window_sum += nums[i] - nums[i-k]
-        current_avg = window_sum / k
+        sum_window += nums[i] - nums[i-k]
+        current_avg = sum_window/k
         max_avg = max(max_avg, current_avg)
-        
+
     return max_avg
+
 
 
 
