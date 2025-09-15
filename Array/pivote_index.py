@@ -18,4 +18,4 @@ def find_pivote_index(nums):
     return -1
 
 
-print(find_pivote_index([2,1,-1]))
+print(find_pivote_index([1,7,3,6,5,6]))
